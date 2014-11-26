@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div.container {
+            background-image: url('img/facebook.jpg');
+            background-size: cover;
+
+            width: 500px;
+            height: 300px;
+        }
+
+        div.mask {
+            background-color: rgba(0,0,0,0);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        div.container:hover > div.mask {
+            transition: background-color 500ms ease;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        div.container:hover div.circle {
+            transition: all 500ms ease;
+            color: white;
+            border: 3px solid white;
+        }
+
+
+
+        div.circle {
+            line-height: 2em;
+            width: 2em;
+            text-align: center;
+            color: transparent;
+            border-radius: 100%;
+            border: 3px solid transparent;
+        }
+
+        div.circle:hover {
+            line-height: 5em;
+            width: 5em;
+            transition: all 500ms ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mask">
+            <div class="circle">
+                Da
+            </div>
+        </div>
+    </div>
+</body>
+</html>
